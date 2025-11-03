@@ -96,3 +96,116 @@ body{
   .two-col{grid-template-columns:1fr}
   .features{grid-template-columns:1fr}
 }
+
+/* ===============================
+   🌿 Extra Mobile Responsive Design (For <600px)
+   =============================== */
+
+@media (max-width: 600px) {
+
+  /* General page padding */
+  body, .container {
+    padding: 0.8rem;
+  }
+
+  /* Header adjustments */
+  .header-inner {
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-nav a {
+    margin: 0.3rem 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 1.2rem 0.6rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    width: 90%;
+    max-width: 280px;
+    border-radius: 12px;
+  }
+
+  /* Product grid */
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .product-card img {
+    height: 140px;
+  }
+
+  .product-card h3 {
+    font-size: 1.1rem;
+  }
+
+  /* About / Two-column sections */
+  .about-preview,
+  .two-col {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-preview img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Contact Section */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    text-align: center;
+  }
+
+  /* Buttons */
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .site-footer .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-footer .footer-links {
+    margin-top: 0.6rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
