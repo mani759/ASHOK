@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Aaranya Naturals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="logo" /><span>Aaranya Naturals</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a class="cta" href="contact.html">Order on WhatsApp</a>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <h1>Contact Us</h1>
+    <p>We're here to help. Use WhatsApp or send an email to place orders or ask questions.</p>
+
+    <section class="contact-grid">
+      <div class="contact-card">
+        <h3>WhatsApp</h3>
+        <p>Message us directly: <a id="wa-link" href="#">+91XXXXXXXXXX</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p><a href="mailto:info@aaranyanaturals.com">info@aaranyanaturals.com</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>Address</h3>
+        <p>123 Farm Lane, Near Market, Your Town, State</p>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Quick Order / Query</h2>
+      <p>Fill details and click "Send to WhatsApp" to start an order chat.</p>
+
+      <form id="quickOrder">
+        <label>Name <input type="text" id="custName" placeholder="Your name" /></label>
+        <label>Product <input type="text" id="custProduct" placeholder="Product name (e.g. Milk - 1 litre)" /></label>
+        <label>Quantity <input type="number" id="custQty" min="1" value="1" /></label>
+        <label>Address <textarea id="custAddress" placeholder="Delivery address"></textarea></label>
+        <button type="button" id="sendQuickOrder" class="btn">Send to WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Aaranya Naturals</strong><p>Pure buffalo milk & organic compost.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="products.html">Products</a></div>
+      <div><p>Contact: <a href="tel:+91XXXXXXXXXX">+91XXXXXXXXXX</a></p></div>
+    </div>
+    <div class="copyright">© <span id="year4"></span> Aaranya Naturals. All rights reserved.</div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
